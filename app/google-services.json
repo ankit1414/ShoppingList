@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "648928386229",
+    "firebase_url": "https://veer-c6bfb.firebaseio.com",
+    "project_id": "veer-c6bfb",
+    "storage_bucket": "veer-c6bfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648928386229:android:bbda867cadc03a901a32fc",
+        "android_client_info": {
+          "package_name": "com.example.shoppinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648928386229-77474q8anqchsggqc7esffk0a02eqrfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shoppinglist",
+            "certificate_hash": "665fd2ec6218eaed91dd78abc67ea79084193287"
+          }
+        },
+        {
+          "client_id": "648928386229-fg02lb6f49vmk5i5obcfuj379j4577r4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8IgOoFp60M7Q1Qihnh-_0-G15k95LqqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648928386229-erdecl1h9v661hikb8mkmlqap37m4lof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
