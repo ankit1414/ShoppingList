@@ -4,7 +4,6 @@
     android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -19,6 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:textSize="34sp"
+            android:textStyle="bold"
             android:textColor="@android:color/white"
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -27,10 +28,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:ems="10"
-            android:inputType="textEmailAddress"
             android:background="@drawable/ed_background"
 
             android:textColorHint="@android:color/white"
@@ -54,6 +55,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:hint="Password"/>
         <Button
+            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -62,7 +64,7 @@
             android:textColor="@android:color/white"
             android:id="@+id/btn_login"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:background="@drawable/ed_background"
+            android:background="@drawable/button_bg"
             />
         <TextView
             android:layout_width="wrap_content"

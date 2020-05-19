@@ -90,6 +90,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:id="@+id/amount_ed"
+                        android:inputType="numberSigned"
                         android:layout_margin="10dp"/>
 
                 </RelativeLayout>
@@ -139,7 +140,7 @@
                 android:text="SAVE"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/white"
-                android:background="@drawable/ed_background"
+                android:background="@drawable/button_bg"
                 android:id="@+id/save_btn"
                 android:layout_margin="10dp"/>
 

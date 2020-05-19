@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,7 +53,16 @@ public class RegisterationActivity extends AppCompatActivity {
                 String email , password;
                 email = email_ed.getText().toString().trim();
                 password = password_ed.getText().toString();
-
+                if(TextUtils.isEmpty(email)){
+                    email_ed.setError("field can't be empty");
+                    mdialog.dismiss();
+                    return;
+                }
+                if (TextUtils.isEmpty(password)) {
+                    password_ed.setError("field can't be empty");
+                    mdialog.dismiss();
+                    return;
+                }
                 mauth.createUserWithEmailAndPassword(email , password)
                         .addOnCompleteListener(RegisterationActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override

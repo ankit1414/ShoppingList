@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+
         mauth = FirebaseAuth.getInstance();
         mdialog = new ProgressDialog(this);
         email_ed = findViewById(R.id.ed_email);
@@ -50,11 +52,12 @@ public class MainActivity extends AppCompatActivity {
                 password = password_ed.getText().toString();
                 if(TextUtils.isEmpty(email)){
                     email_ed.setError("field can't be empty");
+                    mdialog.dismiss();
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
-
                     password_ed.setError("field can't be empty");
+                    mdialog.dismiss();
                     return;
                 }
                 mauth.signInWithEmailAndPassword(email , password)
