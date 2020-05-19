@@ -33,12 +33,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mauth = FirebaseAuth.getInstance();
         mdialog = new ProgressDialog(this);
-
-//        if(mauth.getCurrentUser() !=null){
-//            startActivity(new Intent(getApplicationContext() , HomeActivity.class));
-//        }
-        //findviewbyid s
-
         email_ed = findViewById(R.id.ed_email);
         password_ed = findViewById(R.id.ed_pass);
         login_btn = findViewById(R.id.btn_login);

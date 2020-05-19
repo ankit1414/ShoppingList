@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:padding="10dp"
-                android:text="Add shopping list"
+                android:text="Update shopping list"
                 android:textColor="@android:color/white"
                 android:background="@drawable/background"/>
 
@@ -53,7 +53,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:id="@+id/type_ed"
+                        android:id="@+id/type_ued"
                         android:layout_margin="10dp"/>
 
                 </RelativeLayout>
@@ -89,7 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:id="@+id/amount_ed"
+                        android:id="@+id/amount_ued"
                         android:layout_margin="10dp"/>
 
                 </RelativeLayout>
@@ -123,25 +123,46 @@
                     android:layout_height="wrap_content">
 
                     <EditText
+                        android:id="@+id/note_ued"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:id="@+id/note_ed"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 </RelativeLayout>
 
 
             </LinearLayout>
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SAVE"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/white"
-                android:background="@drawable/ed_background"
-                android:id="@+id/save_btn"
-                android:layout_margin="10dp"/>
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/ed_background"
+                    android:id="@+id/delete_btn"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/ed_background"
+                    android:id="@+id/update_btn"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
 
         </LinearLayout>
 
